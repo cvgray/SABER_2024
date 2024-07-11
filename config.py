@@ -13,7 +13,7 @@ ai_model = "gpt-4o"
 temperature = 0
 
 # Max_tokens refers to the maximum number of tokens (words) the AI can generate. The higher the number, the longer the response. It varies between 1 and 2048.
-max_tokens = 500
+max_tokens = 350
 
 # Frequency penalty parameter for the response. Higher penalty will result in more diverse responses. It varies between 0 and 1.
 frequency_penalty = 0.5
@@ -27,7 +27,7 @@ presence_penalty = 0.5
 
 # Below is the name for your default csv terms file. You can change this to any csv file you want to use as your default terms file. It must be in the same folder as the main app.py file.
 
-default_terms_csv = "terms_template.csv"
+default_terms_csv = "Terms_template_CGray.csv"
 
 ############################################################################################################
 
@@ -37,21 +37,13 @@ default_terms_csv = "terms_template.csv"
 app_title = "DIY AI-enhanced study app for biologists"
 
 # The subtitle of the app
-app_author = "courtesy of UCSD School of Biological Sciences"
+app_author = "CGray"
 
 # This is an intro paragraph you can add under the title. it is not currently being used in the app.
 intro_para = " "
 
 # The user's instructions for the app
 instructions = '''
-**Instructions for educators:**
-The goal of this app is to help students learn and assess their knowledge of core course concepts and examples.
-1. Please visit the following link to see full instructions to copy this app so you can customize it and use it in your classroom.
-2. You can customize the terms in the terms_template.csv file. You can delete everything below the first row and add in your own terms in the first column. You can open and edit it in Excel, Google Sheets, or any text editor. Make sure that you don't change the file extension from csv. Once done, upload it below. The app will use your terms for the study session.
-3. These instructions are formatted in Markdown. You can customize them as needed. If you don't know what Markdown is, it's a simple way to format text on the web. You can learn more about it [here](https://www.markdownguide.org/getting-started/).
-4. You can also customize the text in this app by editing the config.py file. This includes the title, instructions, and more.
-5. If you have any questions or need help, please reach out to the Reuther Lab at UCSD.
-6. When you are ready to deploy, please erase the **Instructions for educators**.
 
 **Instructions for students:**
 The goal of this app is to help you learn and and assess your knowledge of core course concepts and examples. 
